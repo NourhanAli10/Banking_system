@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 16, 2023 at 11:12 PM
+-- Generation Time: Mar 17, 2023 at 12:39 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.0.19
 
@@ -40,18 +40,17 @@ CREATE TABLE `customers` (
 --
 
 INSERT INTO `customers` (`customer_id`, `name`, `email`, `current_balance`, `created_at`) VALUES
-(1, 'nourhan', 'nourhan@gmail.com', '116000.00', '2023-03-16 21:27:32'),
-(2, 'osama', 'osama@gmail.com', '18900.00', '2023-03-16 21:27:32'),
-(3, 'Mohamed', 'mohamed@gmail.com', '1450.00', '2023-03-16 21:27:32'),
-(4, 'nesma', 'nesma@gmail.com', '975000.00', '2023-03-16 21:27:32'),
-(5, 'Ahmed', 'ahmed@gmail.com', '645000.00', '2023-03-16 21:27:32'),
-(6, 'dina', 'dina@gmail.com', '330000.00', '2023-03-16 21:27:32'),
-(7, 'noha', 'noha@gmail.com', '220000.00', '2023-03-16 21:27:32'),
-(8, 'mostafa', 'mostafa@gmail.com', '55000.00', '2023-03-16 21:27:32'),
-(9, 'sara', 'sara@gmail.com', '500.00', '2023-03-16 21:27:32'),
-(10, 'asmaa', 'asmaa@gmail.com', '105000.00', '2023-03-16 21:27:32'),
-(11, 'noura', 'noura@gmail.com', '25000.00', '2023-03-16 21:33:40'),
-(12, 'nermeen', 'nermeen@gmail.com', '250000.00', '2023-03-16 21:52:25');
+(1, 'nourhan', 'nourhan@gmail.com', '95000.00', '2023-03-16 23:15:28'),
+(2, 'osama', 'osama@gmail.com', '220000.00', '2023-03-16 23:15:28'),
+(3, 'Mohamed', 'mohamed@gmail.com', '500000.00', '2023-03-16 23:15:28'),
+(4, 'nesma', 'nesma@gmail.com', '960000.00', '2023-03-16 23:15:28'),
+(5, 'Ahmed', 'ahmed@gmail.com', '650000.00', '2023-03-16 23:15:28'),
+(6, 'dina', 'dina@gmail.com', '100000.00', '2023-03-16 23:15:28'),
+(7, 'asmaa', 'asmaa@gmail.com', '100500.00', '2023-03-16 23:15:28'),
+(8, 'noha', 'noha@gmail.com', '200000.00', '2023-03-16 23:15:28'),
+(9, 'mostafa', 'mostafa@gmail.com', '50000.00', '2023-03-16 23:15:28'),
+(10, 'sara', 'sara@gmail.com', '25000.00', '2023-03-16 23:15:28'),
+(11, 'noura', 'noura@gmail.com', '25000.00', '2023-03-16 23:18:53');
 
 -- --------------------------------------------------------
 
@@ -72,9 +71,10 @@ CREATE TABLE `transfers` (
 --
 
 INSERT INTO `transfers` (`id`, `sender_name`, `receiver_name`, `transfer_amount`, `transfer_date`) VALUES
-(1, 'nourhan', 'osama', '1000.00', '2023-03-16 21:50:44'),
-(2, 'dina', 'noha', '20000.00', '2023-03-16 21:51:19'),
-(3, 'Ahmed', 'asmaa', '5000.00', '2023-03-16 22:02:37');
+(1, 'nourhan', 'osama', '20000.00', '2023-03-16 23:17:02'),
+(2, 'nesma', 'sara', '25000.00', '2023-03-16 23:17:38'),
+(3, 'sara', 'asmaa', '500.00', '2023-03-16 23:17:53'),
+(4, 'nourhan', 'nesma', '5000.00', '2023-03-16 23:18:10');
 
 --
 -- Indexes for dumped tables
@@ -101,7 +101,7 @@ ALTER TABLE `transfers`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `customer_id` int(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `customer_id` int(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `transfers`
